@@ -1,0 +1,613 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dineug/erd-editor/main/json-schema/schema.json",
+  "version": "3.0.0",
+  "settings": {
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -624.2055,
+    "scrollLeft": -532.3706,
+    "zoomLevel": 0.1,
+    "show": 431,
+    "database": 4,
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": 1,
+    "tableNameCase": 4,
+    "columnNameCase": 2,
+    "bracketType": 1,
+    "relationshipDataTypeSync": true,
+    "relationshipOptimization": false,
+    "columnOrder": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "maxWidthComment": -1,
+    "ignoreSaveSettings": 0
+  },
+  "doc": {
+    "tableIds": [
+      "t1",
+      "t2",
+      "t3"
+    ],
+    "relationshipIds": [
+      "r1",
+      "r2"
+    ],
+    "indexIds": [
+      "i1",
+      "i2"
+    ],
+    "memoIds": []
+  },
+  "collections": {
+    "tableEntities": {
+      "t1": {
+        "id": "t1",
+        "name": "categorias",
+        "comment": "Categorías de productos",
+        "columnIds": [
+          "c1",
+          "c2",
+          "c3",
+          "c4"
+        ],
+        "seqColumnIds": [
+          "c1",
+          "c2",
+          "c3",
+          "c4"
+        ],
+        "ui": {
+          "x": -56.8493,
+          "y": -45.8905,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 132,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1764304206751,
+          "createAt": 1700000000000
+        }
+      },
+      "t2": {
+        "id": "t2",
+        "name": "productos",
+        "comment": "Productos del inventario",
+        "columnIds": [
+          "c5",
+          "c6",
+          "c7",
+          "c8",
+          "c9",
+          "c10",
+          "c11",
+          "c12",
+          "c13"
+        ],
+        "seqColumnIds": [
+          "c5",
+          "c6",
+          "c7",
+          "c8",
+          "c9",
+          "c10",
+          "c11",
+          "c12",
+          "c13"
+        ],
+        "ui": {
+          "x": 502.7397,
+          "y": -60.9589,
+          "zIndex": 2,
+          "widthName": 60,
+          "widthComment": 131,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1764304209778,
+          "createAt": 1700000000000
+        }
+      },
+      "t3": {
+        "id": "t3",
+        "name": "movimientos",
+        "comment": "Movimientos de inventario",
+        "columnIds": [
+          "c14",
+          "c15",
+          "c16",
+          "c17",
+          "c18",
+          "c19"
+        ],
+        "seqColumnIds": [
+          "c14",
+          "c15",
+          "c16",
+          "c17",
+          "c18",
+          "c19"
+        ],
+        "ui": {
+          "x": 215.0685,
+          "y": 290.411,
+          "zIndex": 2,
+          "widthName": 71,
+          "widthComment": 144,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1764304209778,
+          "createAt": 1700000000000
+        }
+      }
+    },
+    "tableColumnEntities": {
+      "c1": {
+        "id": "c1",
+        "tableId": "t1",
+        "name": "id",
+        "comment": "Identificador",
+        "dataType": "INTEGER",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 69,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      },
+      "c2": {
+        "id": "c2",
+        "tableId": "t1",
+        "name": "nombre",
+        "comment": "Nombre categoría",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 98,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      },
+      "c3": {
+        "id": "c3",
+        "tableId": "t1",
+        "name": "descripcion",
+        "comment": "Descripción",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 62,
+          "widthComment": 64,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      },
+      "c4": {
+        "id": "c4",
+        "tableId": "t1",
+        "name": "fechaCreacion",
+        "comment": "Fecha de creación",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 77,
+          "widthComment": 97,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      },
+      "c5": {
+        "id": "c5",
+        "tableId": "t2",
+        "name": "id",
+        "comment": "Identificador",
+        "dataType": "INTEGER",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 69,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      },
+      "c6": {
+        "id": "c6",
+        "tableId": "t2",
+        "name": "nombre",
+        "comment": "Nombre producto",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 98,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      },
+      "c7": {
+        "id": "c7",
+        "tableId": "t2",
+        "name": "descripcion",
+        "comment": "Descripción",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 62,
+          "widthComment": 64,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      },
+      "c8": {
+        "id": "c8",
+        "tableId": "t2",
+        "name": "precio",
+        "comment": "Precio unitario",
+        "dataType": "REAL",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 79,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      },
+      "c9": {
+        "id": "c9",
+        "tableId": "t2",
+        "name": "cantidad",
+        "comment": "Stock actual",
+        "dataType": "INTEGER",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 65,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      },
+      "c10": {
+        "id": "c10",
+        "tableId": "t2",
+        "name": "categoria",
+        "comment": "FK a categorias",
+        "dataType": "INTEGER",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 82,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      },
+      "c11": {
+        "id": "c11",
+        "tableId": "t2",
+        "name": "fechaCreacion",
+        "comment": "Fecha de creación",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 77,
+          "widthComment": 97,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      },
+      "c12": {
+        "id": "c12",
+        "tableId": "t2",
+        "name": "fechaActualizacion",
+        "comment": "Fecha de actualización",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 100,
+          "widthComment": 121,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      },
+      "c13": {
+        "id": "c13",
+        "tableId": "t2",
+        "name": "indice",
+        "comment": "Índice para búsquedas",
+        "dataType": "INTEGER",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 121,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      },
+      "c14": {
+        "id": "c14",
+        "tableId": "t3",
+        "name": "id",
+        "comment": "Identificador",
+        "dataType": "INTEGER",
+        "default": "",
+        "options": 11,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 69,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      },
+      "c15": {
+        "id": "c15",
+        "tableId": "t3",
+        "name": "productoId",
+        "comment": "FK a productos",
+        "dataType": "INTEGER",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 61,
+          "widthComment": 81,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      },
+      "c16": {
+        "id": "c16",
+        "tableId": "t3",
+        "name": "tipo",
+        "comment": "entrada o salida",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 86,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      },
+      "c17": {
+        "id": "c17",
+        "tableId": "t3",
+        "name": "cantidad",
+        "comment": "Cantidad movida",
+        "dataType": "INTEGER",
+        "default": "",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 92,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      },
+      "c18": {
+        "id": "c18",
+        "tableId": "t3",
+        "name": "motivo",
+        "comment": "Motivo del movimiento",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 126,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      },
+      "c19": {
+        "id": "c19",
+        "tableId": "t3",
+        "name": "fecha",
+        "comment": "Fecha del movimiento",
+        "dataType": "TEXT",
+        "default": "",
+        "options": 0,
+        "ui": {
+          "keys": 0,
+          "widthName": 60,
+          "widthComment": 119,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      }
+    },
+    "relationshipEntities": {
+      "r1": {
+        "id": "r1",
+        "identification": false,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "",
+          "columnIds": [],
+          "x": 0,
+          "y": 0,
+          "direction": 8
+        },
+        "end": {
+          "tableId": "",
+          "columnIds": [],
+          "x": 0,
+          "y": 0,
+          "direction": 8
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      },
+      "r2": {
+        "id": "r2",
+        "identification": false,
+        "relationshipType": 16,
+        "startRelationshipType": 2,
+        "start": {
+          "tableId": "",
+          "columnIds": [],
+          "x": 0,
+          "y": 0,
+          "direction": 8
+        },
+        "end": {
+          "tableId": "",
+          "columnIds": [],
+          "x": 0,
+          "y": 0,
+          "direction": 8
+        },
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      }
+    },
+    "indexEntities": {
+      "i1": {
+        "id": "i1",
+        "name": "idx_productos_categoria",
+        "tableId": "t2",
+        "indexColumnIds": [],
+        "seqIndexColumnIds": [],
+        "unique": false,
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      },
+      "i2": {
+        "id": "i2",
+        "name": "idx_movimientos_producto",
+        "tableId": "t3",
+        "indexColumnIds": [],
+        "seqIndexColumnIds": [],
+        "unique": false,
+        "meta": {
+          "updateAt": 1700000000000,
+          "createAt": 1700000000000
+        }
+      }
+    },
+    "indexColumnEntities": {},
+    "memoEntities": {}
+  }
+}
