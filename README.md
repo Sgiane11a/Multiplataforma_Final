@@ -217,7 +217,7 @@ flutter run
 
 <div align="center">
 
-**Hecho con ❤️ de Ginaella - usando Flutter y Dart**
+**Hecho con ❤️ de Gianella - usando Flutter y Dart**
 
 [⬆ Volver al inicio](#-gestión-de-inventario---aplicación-flutter-completa)
 
